@@ -161,9 +161,94 @@ a{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+/* popup: */
+#popup{
+    transition-duration: 100ms;
+    position: absolute;
+    width: 100vw;
+    left: 0;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.629);
+}
+#search_dialogue{
+    background: linear-gradient(rgb(105, 155, 212), rgb(131, 162, 190));
+    width: 94vw;
+    margin-inline: auto;
+    margin-top: 15vh;
+    height: 85vh;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    overflow: hidden;
+}
+#search_core{
+    margin-inline: auto;
+    margin-top: 5%;
+    height: 10%;
+    background-color: rgba(255, 255, 255, 0.672);
+    width: 80%;
+    position: relative;
+    text-align: center;
+    border-radius: 20px;
+}
+#search_core input, #search_core button{
+    position: relative;
+    display: flexbox;
+    align-self: center;
+    font-size: 30px;
+}
+#search_core button{
+    transition-duration: 100ms;
+    height: 100%;
+    width: 80px;
+    background-color: #00000000;
+    border: 0;
+    border-radius: 100px;
+}
+#search_core button svg{
+    fill: rgb(105, 105, 105);
+}
+#search_core button:active{
+    background-color: rgba(255, 255, 255, 0.629);
+}
+#search_core input{
+    width: 80%;
+    margin: 0;
+    height: 90%;
+    transform: translate(0, -24%);
+    background-color: #00000000;
+    border: 0;
+    appearance: none;
+}
+*:focus {
+    outline: none;
+}
+.r{
+    margin-top: 4%;
+    font-size: 30px;
+    margin-left: 10vw;
+}
+.recent_searches{
+    margin-left: 0vw;
+    width: 100vw;
+    margin-block: 6px;
+    background-color: rgba(0, 0, 0, 0);
+}
+.recent_searches h2{
+    margin-left: 0vw;
+    padding-left: 10%;
+    width: 100vw;
+    height: 12vw;
+    margin-block: 6px;
+    background-color: rgba(204, 216, 223, 0.39);
+}
+.recent_searches h2 :active{
+    background-color: rgba(209, 209, 209, 0.861);
+}
+
 /* Scroll bars: */
 ::-webkit-scrollbar{
-    display: none;
+    display: none;rgba(105, 105, 105, 0.809)
     width: 0;
     position: absolute;
 }
